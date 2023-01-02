@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {HeaderComponent} from "./components/header/headerComponent";
+import { InicioPage } from './pages/inicio/inicioPage';
+import {UnaLlamadaAlaApiDePokemonPage} from "./pages/unaCard/unaCardPage"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Router>
+        <HeaderComponent/>
+          <Routes>
+            <Route path='/' element={<InicioPage />}></Route>
+            <Route path='/Card' element={<UnaLlamadaAlaApiDePokemonPage />}></Route>
+            <Route path='/MultipleCard'></Route>
+          </Routes>
+        </Router>
     </div>
   );
 }

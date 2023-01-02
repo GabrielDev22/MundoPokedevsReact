@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Noto+Sans+Mono:wght@500&family=Open+Sans&family=Poppins&family=Roboto:wght@300;500&family=Sevillana&display=swap');
+
+.tituloApiDePokemon{
+    font-size: 40px;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+    margin-top: 50px;
+    transition:  0.8s all ease-in-out;
+}
+
+.tituloApiDePokemon:hover{
+    color: #891E28;
+    border-bottom: 3px solid #EBB209
+}
+
+.contenedorCard{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 25rem;
+}
+
+.imagenContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 2px solid white;
+    box-shadow: 25px 25px 50px black;
+}
+
+.imagenPokemon{
+    border-radius: 50%;
+    width: 300px;
+    background-color: #891E28;
+    border: 4px solid #EAF640;
+    box-shadow: 25px 25px 50px #EAF640;
+    transition:  0.8s all ease-in-out;
+}
+
+.imagenPokemon:hover{
+    background-color: #003CF5;;
+    transform: translate(20px, 10px);
+}
+
+.contenidoStat{
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.namePokemon{
+   font-family: 'IBM Plex Mono', monospace;
+   font-size: 30px;
+   margin-bottom: 10px;
+   width: 150px;
+   transition: 0.8s all ease-in-out;
+}
+.namePokemon:hover{
+    color: #891E28;
+    border-bottom: 3px solid #EBB209
+}
+
+.numberPokemon{
+   font-size: 26px;
+   margin-bottom: 10px;
+   width: 150px;
+   transition: 0.8s all ease-in-out;
+}
+
+.numberPokemon:hover{
+    color: #891E28;
+    border-bottom: 3px solid #EBB209
+}
+
+.baseDeExperiencia{
+    font-size: 26px;
+    margin-bottom: 10px;
+    width: 150px;
+    transition: 0.8s all ease-in-out;
+}
+
+.baseDeExperiencia:hover{
+    color: #891E28;
+    border-bottom: 3px solid #EBB209
+}
+
+.pesoPokemon{
+    font-size: 26px;
+    margin-bottom: 10px;
+    width: 150px;
+    transition: 0.8s all ease-in-out;
+}
+
+.pesoPokemon:hover{
+    color: #891E28;
+    border-bottom: 3px solid #EBB209
+}
+
+.hpPokemon{
+    font-size: 26px;
+    margin-bottom: 10px;
+    width: 150px;
+    transition: 0.8s all ease-in-out;
+}
+
+.hpPokemon:hover{
+    color: #891E28;
+    border-bottom: 3px solid #EBB209
+}
+
+.ataquePokemon{
+    font-size: 26px;
+    margin-bottom: 10px;
+    width: 150px;
+    transition: 0.8s all ease-in-out;
+}
+
+.ataquePokemon:hover{
+    color: #891E28;
+    border-bottom: 3px solid #EBB209
+}
+
+.defensaPokemon{
+    font-size: 26px;
+    margin-bottom: 10px;
+    width: 150px;
+    transition: 0.8s all ease-in-out;
+}
+
+.defensaPokemon:hover{
+    color: #891E28;
+    border-bottom: 3px solid #EBB209
+}
+
+.specialAttackPokemon{
+    font-size: 26px;
+    margin-bottom: 10px;
+    width: 250px;
+    transition: 0.8s all ease-in-out;
+}
+
+.specialAttackPokemon:hover{
+    color: #891E28;
+    border-bottom: 3px solid #EBB209
+}
+
+.specialDefensePokemon{
+    font-size: 26px;
+    margin-bottom: 10px;
+    width: 250px;
+    transition: 0.8s all ease-in-out;
+}
+
+.specialDefensePokemon:hover{
+    color: #891E28;
+    border-bottom: 3px solid #EBB209
+}
+
+.speedPokemon{
+    font-size: 26px;
+    margin-bottom: 5px;
+    width: 150px;
+    transition: 0.8s all ease-in-out;
+}
+
+.speedPokemon:hover{
+    color: #891E28;
+    border-bottom: 3px solid #EBB209
+}
+
+.botonDeReinicio{
+    display: flex;
+    margin: 0 auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    background-color: #891E28;
+    color: white;
+    padding: 13px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    border: 3px solid black;
+    transition:  0.8s all ease-in-out;
+}
+
+.botonDeReinicio:hover{
+    background-color: #003CF5;
+}
