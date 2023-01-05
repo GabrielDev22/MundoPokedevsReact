@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Noto+Sans+Mono:wght@500&family=Open+Sans&family=Poppins&family=Roboto:wght@300;500&family=Sevillana&family=Ubuntu&display=swap');
+
+.TituloInicio{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    transition:  0.8s all ease-in-out;
+}
+
+.TituloInicio:hover{
+    color: #891E28;
+    border-bottom: 3px solid #EBB209;
+}
+
+/* Contenedor Pokemon */
+
+.contenedorPokemon{
+   margin: 50px;
+}
+
+.contenidoPokemon{
+    font-size: 24px;
+}
+
+.tituloSeccion{
+    color: #891E28;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 2s ease;
+}
+
+hr{
+    border-bottom: 1px solid gray;
+}
+
+.tituloSeccion:hover{
+    transform: translate(35%, 25%);
+    margin-bottom: 5px;
+}
+
+.informacionPokemon{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+}
+
+/* ContenedorIndice */
+
+.contenedorIndice{
+    width: 600px;
+    height: 30rem;
+    margin: 0 auto;
+    border: 3px solid gray;
+    background-color: rgb(245, 245, 245); 
+    margin-bottom: 100px;
+    box-shadow: 5px 5px 10px 10px gray;
+}
+
+.tituloIndice{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.tituloIndice:hover{
+    border-bottom: 3px solid gray;
+}
+
+.listaDeSecciones{
+    list-style: none;
+}
+
+span{
+    color: black;
+    margin-right: 7px;
+}
+
+.linkDeLosIndices{
+    display: flex;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #1A53F0;
+}
+
+.linkDeLosIndices:hover{
+    text-decoration-line: underline;
+    color: #891E28
+}
+
+/*  Etimologia */
+
+.contenedorEtimologia{
+    margin: 50px;
+}
+
+.contenidoEtimologia{
+    font-size: 24px;
+}
+
+.informacionEtimologia{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+}
+
+/*  HISTORIA */
+
+.contenedorHistoria{
+    margin: 50px;
+}
+
+.contenidoHistoria{
+    font-size: 24px;
+}
+
+.informacionHistoria{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+}
+
+/* CONCEPTO */
+
+.contenedorConcepto{
+    margin: 50px;
+}
+
+.contenidoConcepto{
+    font-size: 24px;
+}
+
+.informacionConcepto{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+}
+
+/* Mecani del juego */
+
+.contenedorMecanicaDelJuego{
+    margin: 50px;
+}
+
+.contendioMecanicaDelJuego{
+    font-size: 24px;
+}
+
+.tituloMecaniDelJuego{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    font-size: 22px;
+    margin-left: 20px;
+    color: rgb(30, 30, 30);
+    text-shadow: 1px 2px 3px #1A53F0;
+}
+
+.informacionMecanicaDelJuego{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+}
+
+/* Medios Relacionados */
+
+.contenedorMediosRelacionados{
+    margin: 50px;
+}
+
+.contenidoMediosRelacionados{
+    font-size: 24px;
+}
+
+.tituloMediosRelacionados{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    font-size: 22px;
+    margin-left: 20px;
+    color: rgb(30, 30, 30);
+    text-shadow: 1px 2px 3px #1A53F0;
+}
+
+.informacionMediosRelacionados{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+}
+
+/* Criticas  */
+
+.contenedorCriticas{
+    margin: 50px;
+}
+
+.contenidoCriticas{
+    font-size: 24px;
+}
+
+.tituloCriticas{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    font-size: 22px;
+    margin-left: 20px;
+    color: rgb(30, 30, 30);
+    text-shadow: 1px 2px 3px #1A53F0;
+}
+
+.informacionCriticas{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+}
+
+/* Impacto en la cultura popular */
+
+.contenedorImpactoCultura{
+    margin: 50px;
+    margin-bottom: 100px;
+}
+
+.contenidoImpactoCultura{
+    font-size: 24px;
+}
+
+.informacionCultura{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+}

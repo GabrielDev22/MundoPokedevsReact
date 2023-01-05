@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Noto+Sans+Mono:wght@500&family=Open+Sans&family=Poppins&family=Roboto:wght@300;500&family=Sevillana&display=swap');
+
+
+.tituloLibroPokemon{
+    font-size: 40px;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+    margin-top: 50px;
+    transition:  0.8s all ease-in-out;
+}
+
+.tituloLibroPokemon:hover{
+    color: #891E28;
+    border-bottom: 3px solid #EBB209
+}

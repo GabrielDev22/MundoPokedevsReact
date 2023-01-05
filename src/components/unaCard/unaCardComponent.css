@@ -17,6 +17,12 @@
     width: 50%;
     margin-top: 50px;
     margin-left: 25rem;
+    transition: 0.8s all ease-in-out;
+}
+
+.contenedorCard:hover{
+    color: white;
+    background-color: #891E28;
 }
 
 .imagenContainer{
@@ -38,7 +44,7 @@
 }
 
 .imagenPokemon:hover{
-    background-color: #003CF5;;
+    background-color: #003CF5;
     transform: translate(20px, 10px);
 }
 
@@ -57,7 +63,8 @@
    transition: 0.8s all ease-in-out;
 }
 .namePokemon:hover{
-    color: #891E28;
+    color: #6a8df6;
+    text-shadow: 1px 2px 3px black;
     border-bottom: 3px solid #EBB209
 }
 
@@ -69,7 +76,8 @@
 }
 
 .numberPokemon:hover{
-    color: #891E28;
+    color: #6a8df6;
+    text-shadow: 1px 2px 3px black;
     border-bottom: 3px solid #EBB209
 }
 
@@ -81,7 +89,8 @@
 }
 
 .baseDeExperiencia:hover{
-    color: #891E28;
+    color: #6a8df6;
+    text-shadow: 1px 2px 3px black;
     border-bottom: 3px solid #EBB209
 }
 
@@ -93,7 +102,8 @@
 }
 
 .pesoPokemon:hover{
-    color: #891E28;
+    color: #6a8df6;
+    text-shadow: 1px 2px 3px black;
     border-bottom: 3px solid #EBB209
 }
 
@@ -105,7 +115,8 @@
 }
 
 .hpPokemon:hover{
-    color: #891E28;
+    color: #6a8df6;
+    text-shadow: 1px 2px 3px black;
     border-bottom: 3px solid #EBB209
 }
 
@@ -117,7 +128,8 @@
 }
 
 .ataquePokemon:hover{
-    color: #891E28;
+    color: #6a8df6;
+    text-shadow: 1px 2px 3px black;
     border-bottom: 3px solid #EBB209
 }
 
@@ -129,7 +141,8 @@
 }
 
 .defensaPokemon:hover{
-    color: #891E28;
+    color: #6a8df6;
+    text-shadow: 1px 2px 3px black;
     border-bottom: 3px solid #EBB209
 }
 
@@ -141,7 +154,8 @@
 }
 
 .specialAttackPokemon:hover{
-    color: #891E28;
+    color: #6a8df6;
+    text-shadow: 1px 2px 3px black;
     border-bottom: 3px solid #EBB209
 }
 
@@ -153,7 +167,8 @@
 }
 
 .specialDefensePokemon:hover{
-    color: #891E28;
+    color: #6a8df6;
+    text-shadow: 1px 2px 3px black;
     border-bottom: 3px solid #EBB209
 }
 
@@ -165,7 +180,8 @@
 }
 
 .speedPokemon:hover{
-    color: #891E28;
+    color: #6a8df6;
+    text-shadow: 1px 2px 3px black;
     border-bottom: 3px solid #EBB209
 }
 

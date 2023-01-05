@@ -69,8 +69,8 @@ export const UnaLlamadaAlaApiDePokemonComponent = () => {
                             <p className="speedPokemon">Esperando...</p>
                     </div>
                 </div>
-                <button className="botonDeReinicio" onClick={() => setCondicion(!condicion)}>New Pokemons</button>
            </div>
+                <button className="botonDeReinicio" onClick={() => setCondicion(!condicion)}>New Pokemons</button>
 
 
         </div>
