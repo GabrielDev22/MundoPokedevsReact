@@ -25,7 +25,7 @@
     background-color: #891E28;
 }
 
-.imagenContainer{
+.contenedorDeImagen{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,4 +202,23 @@
 
 .botonDeReinicio:hover{
     background-color: #003CF5;
+}
+
+.inputLlamadPokemon{
+    display: flex;
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    border-bottom: 3px solid black;
+    box-shadow: 10px 10px 20px #EBB209;
+    text-align: center;
+    font-size: 18px;
+    font-family: IBM Plex Mono', monospace';
+    color: black;
+}
+
+.inputLlamadPokemon:hover{
+    border: 3px solid #891E28;
 }

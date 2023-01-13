@@ -1,18 +1,26 @@
 import "./unaCardComponent.css"
-import {useState, useEffect } from "react"
+import {useState} from "react"
 export const UnaLlamadaAlaApiDePokemonComponent = () => {
 
     const [condicion, setCondicion] = useState(false)
 
-    const llamadaApiDePokemon = () => {
-         fetch(`https://pokeapi.co/api/v2/pokemon/pikachu`)
+    const llamadaApiDePokemon = (event) => {
+        event.preventDefault();
+        const { value } = event.target.pokemon;
+         fetch(`https://pokeapi.co/api/v2/pokemon/${value.toLowerCase()}`)
          .then((res) => res.json())
          .then((data) => {
-            console.log(data)
             enviandoLosDatosAlDom(data)
          })
 
+       
+
     const enviandoLosDatosAlDom = (data) => {
+
+        const contenedorCard = document.querySelector('.contenedorCard');
+
+        contenedorCard.style.display = 'block';
+
         /* Contenedor de la Card */
         const imagenPokemon = document.querySelector('.imagenPokemon'),
         namePokemon = document.querySelector('.namePokemon'),
@@ -44,33 +52,41 @@ export const UnaLlamadaAlaApiDePokemonComponent = () => {
         
     }
 
-    useEffect(() => {
-        llamadaApiDePokemon()
-    },[condicion])
-
     
     return(
         <div>
             <h1 className="tituloApiDePokemon">Llamando a la Api de Pokemon</h1>
+
+            <form action="" onSubmit={event => llamadaApiDePokemon(event)}>
+                <input type="text" name="pokemon" placeholder="Pokemon" className="inputLlamadPokemon" />
+                <button className="botonDeReinicio" onClick={() => setCondicion(!condicion)}>New Pokemons</button>
+            </form>
             
-           <div className="contenedorCard">
-                <div className="imagenContainer">
+           <div className="contenedorCard" style={{display: 'none'}}>
+                <div className="contenedorDeImagen">
                     <img src="" className="imagenPokemon" alt="" />
                     <div className="contenidoStat">
                         <h2 className="namePokemon">Esperando...</h2>
                             <p className="numberPokemon">Esperando...</p> 
                             <p className="baseDeExperiencia">Esperando...</p>
+                            <progress max={200} value={112}></progress>
                             <p className="pesoPokemon">Esperando...</p>
+                            <progress max={200} value={112}></progress>
                             <p className="hpPokemon">Esperando...</p>
+                            <progress max={200} value={112}></progress>
                             <p className="ataquePokemon">Esperando...</p>
+                            <progress max={200} value={112}></progress>
                             <p className="defensaPokemon">Esperando...</p>
+                            <progress max={200} value={112}></progress>
                             <p className="specialAttackPokemon">Esperando...</p>
+                            <progress max={200} value={112}></progress>
                             <p className="specialDefensePokemon">Esperando...</p>
+                            <progress max={200} value={112}></progress>
                             <p className="speedPokemon">Esperando...</p>
+                            <progress max={200} value={112}></progress>
                     </div>
                 </div>
            </div>
-                <button className="botonDeReinicio" onClick={() => setCondicion(!condicion)}>New Pokemons</button>
 
 
         </div>
