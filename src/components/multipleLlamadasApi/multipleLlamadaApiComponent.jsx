@@ -4,7 +4,6 @@ import { useState } from "react";
 export const MultipleLlamadaApiComponent = () => {
 
     const [condicion, setCondicion] = useState(false);
-    
 
     const getData = (id) =>{
         fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)

@@ -9,20 +9,21 @@
 }
 
 .tituloApiDePokemon:hover{
-    color: #891E28;
+    color: #d2404f;
     border-bottom: 3px solid #EBB209
 }
 
 .contenedorCard{
-    width: 50%;
+    width: 65%;
     margin-top: 50px;
-    margin-left: 25rem;
+    margin-left: 18rem;
+    margin-bottom: 50px;
     transition: 0.8s all ease-in-out;
 }
 
 .contenedorCard:hover{
     color: white;
-    background-color: #891E28;
+    background-color: #ca3443;
 }
 
 .contenedorDeImagen{
@@ -36,9 +37,9 @@
 
 .imagenPokemon{
     border-radius: 50%;
-    width: 300px;
-    background-color: #891E28;
-    border: 4px solid #EAF640;
+    width: 350px;
+    background-color: #c54350;
+    border: 6px solid #EAF640;
     box-shadow: 25px 25px 50px #EAF640;
     transition:  0.8s all ease-in-out;
 }
@@ -57,7 +58,7 @@
 
 .namePokemon{
    font-family: 'IBM Plex Mono', monospace;
-   font-size: 30px;
+   font-size: 35px;
    margin-bottom: 10px;
    width: 150px;
    transition: 0.8s all ease-in-out;
@@ -84,7 +85,7 @@
 .baseDeExperiencia{
     font-size: 26px;
     margin-bottom: 10px;
-    width: 150px;
+    width: 200px;
     transition: 0.8s all ease-in-out;
 }
 
@@ -183,6 +184,26 @@
     color: #6a8df6;
     text-shadow: 1px 2px 3px black;
     border-bottom: 3px solid #EBB209
+}
+
+.progressBarPokemonOne, .progressBarPokemonTwo,.progressBarPokemonThree, .progressBarPokemonFour, .progressBarPokemonFive, .progressBarPokemonSix, .progressBarPokemonSeven, .progressBarPokemonEight {
+    background: rgb(37,40,80);
+    background: linear-gradient(194deg, rgba(37,40,80,1) 11%, rgba(1,165,177,1) 28%, rgba(1,165,177,1) 65%, rgba(37,40,80,1) 89%);
+    border: 2px solid white;
+    border-radius: 20px;
+    text-indent: -666em;
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+    height: 25px;
+    transition: 3s all ease-in-out;
+}
+
+.progressBarContenedor{
+    width: 400px;
+    border: 2px solid #808080;
+    border-radius: 20px;
+    transition: 1s all ease-in-out;
 }
 
 .botonDeReinicio{
