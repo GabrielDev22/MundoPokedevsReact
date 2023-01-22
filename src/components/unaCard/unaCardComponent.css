@@ -243,3 +243,129 @@
 .inputLlamadPokemon:hover{
     border: 3px solid #891E28;
 }
+
+@media screen and (max-width: 600px){
+    .contenedorCard{
+        width: 95%;
+        margin-top: 50px;
+        margin-left: 1rem;
+        margin-bottom: 50px;
+        transition: 0.8s all ease-in-out;
+    }
+    
+    .contenedorDeImagen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: 2px solid white;
+        box-shadow: 25px 25px 50px black;
+    }
+    
+    .imagenPokemon{
+        border-radius: 50%;
+        width: 200px;
+        background-color: #c54350;
+        border: 6px solid #EAF640;
+        box-shadow: 25px 25px 50px #EAF640;
+        transition:  0.8s all ease-in-out;
+    }
+
+    .contenidoStat{
+        width: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .namePokemon{
+       font-family: 'IBM Plex Mono', monospace;
+       font-size: 25px;
+       margin-bottom: 10px;
+       width: 150px;
+       transition: 0.8s all ease-in-out;
+    }
+  
+    
+    .numberPokemon{
+       font-size: 18px;
+       margin-bottom: 10px;
+       width: 150px;
+       transition: 0.8s all ease-in-out;
+    }
+    
+    .baseDeExperiencia{
+        font-size: 16px;
+        margin-bottom: 10px;
+        width: 200px;
+        transition: 0.8s all ease-in-out;
+    }
+
+    .pesoPokemon{
+        font-size: 16px;
+        margin-bottom: 10px;
+        width: 150px;
+        transition: 0.8s all ease-in-out;
+    }
+    
+    .hpPokemon{
+        font-size: 16px;
+        margin-bottom: 10px;
+        width: 150px;
+        transition: 0.8s all ease-in-out;
+    }
+    
+    .ataquePokemon{
+        font-size: 16px;
+        margin-bottom: 10px;
+        width: 150px;
+        transition: 0.8s all ease-in-out;
+    }
+ 
+    .defensaPokemon{
+        font-size: 16px;
+        margin-bottom: 10px;
+        width: 150px;
+        transition: 0.8s all ease-in-out;
+    }
+
+    .specialAttackPokemon{
+        font-size: 16px;
+        margin-bottom: 10px;
+        width: 250px;
+        transition: 0.8s all ease-in-out;
+    }
+
+    .specialDefensePokemon{
+        font-size: 16px;
+        margin-bottom: 10px;
+        width: 250px;
+        transition: 0.8s all ease-in-out;
+    }
+
+    .speedPokemon{
+        font-size: 16px;
+        margin-bottom: 5px;
+        width: 150px;
+        transition: 0.8s all ease-in-out;
+    }
+   
+    .progressBarPokemonOne, .progressBarPokemonTwo,.progressBarPokemonThree, .progressBarPokemonFour, .progressBarPokemonFive, .progressBarPokemonSix, .progressBarPokemonSeven, .progressBarPokemonEight {
+        background: rgb(37,40,80);
+        background: linear-gradient(194deg, rgba(37,40,80,1) 11%, rgba(1,165,177,1) 28%, rgba(1,165,177,1) 65%, rgba(37,40,80,1) 89%);
+        border: 2px solid white;
+        border-radius: 20px;
+        text-indent: -666em;
+        overflow: hidden;
+        max-width: 250px;
+        width: 100%;
+        height: 10px;
+        transition: 3s all ease-in-out;
+    }
+    
+    .progressBarContenedor{
+        width: 252px;
+        border: 2px solid #808080;
+        border-radius: 20px;
+        transition: 1s all ease-in-out;
+    }
+}
