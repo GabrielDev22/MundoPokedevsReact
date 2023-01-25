@@ -3,9 +3,12 @@ import {Link} from "react-router-dom";
 import { useState } from "react";
 export const MultipleLlamadaApiComponent = () => {
 
-    const [condicion, setCondicion] = useState(false);
+    const [condicion, setCondicion] = useState(null);
 
-    const getData = (id) =>{
+    let limit = 9;
+    let offset = 1;
+
+    const fetchPokemons = (id) =>{
         fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
         .then((res) => res.json())
         .then((data) => {
@@ -13,11 +16,13 @@ export const MultipleLlamadaApiComponent = () => {
         })
     }
 
-    const pokemons = (number) => {
-        for(let i = 1; i <= number; i++){
-            getData(i)
+    const pokemon = (offset, limit) => {
+        for(let i = offset; i <= offset + limit; i++){
+            fetchPokemons(i)
         }
     }
+
+
     const createPokemons = (pokemons) => {
 
         const contenedorCards = document.querySelector('.contenedorLibros');
@@ -86,7 +91,7 @@ export const MultipleLlamadaApiComponent = () => {
         contenedorCards.appendChild(imagenContainer);
 
     }
-    pokemons(20);
+    pokemon(offset, limit);
 
     
     return(
@@ -102,7 +107,7 @@ export const MultipleLlamadaApiComponent = () => {
                     <li className="page-item" id="previous">
                         <Link className="page-link" >Anterior</Link>
                     </li>
-                    <li className="page-item" id="next" onClick={() => setCondicion(!condicion)} >
+                    <li className="page-item" id="next" onClick={() => setCondicion(!condicion) }>
                         <Link className="page-link">Siguiente</Link>
                     </li>
                 </ul>

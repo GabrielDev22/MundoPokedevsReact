@@ -10,7 +10,7 @@ export const HeaderComponent = () => {
                     </li>
 
                     <li className="linkDePaginas">
-                        <Link to="/Card" className="urlPaginas">UnaCard</Link>
+                        <Link to="/Card" className="urlPaginas">Pokemon</Link>
                     </li>
 
                     <li className="linkDePaginas">

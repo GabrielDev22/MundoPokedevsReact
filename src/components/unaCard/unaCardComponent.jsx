@@ -111,7 +111,7 @@ export const UnaLlamadaAlaApiDePokemonComponent = () => {
     
     return(
         <div>
-            <h1 className="tituloApiDePokemon">Llamando a la Api de Pokemon</h1>
+            <h1 className="tituloApiDePokemon">Busca un Pokemon</h1>
 
             <form action="" onSubmit={event => llamadaApiDePokemon(event)}>
                 <input type="text" name="pokemon" placeholder="Pokemon" className="inputLlamadPokemon" />
