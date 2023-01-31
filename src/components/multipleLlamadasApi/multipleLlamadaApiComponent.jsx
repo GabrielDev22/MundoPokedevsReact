@@ -1,12 +1,6 @@
 import "./multipleLlamadaApiComponent.css"
 import {Link} from "react-router-dom";
-import { useState } from "react";
 export const MultipleLlamadaApiComponent = () => {
-
-    const [condicion, setCondicion] = useState(null);
-
-    let limit = 9;
-    let offset = 1;
 
     const fetchPokemons = (id) =>{
         fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
@@ -16,8 +10,12 @@ export const MultipleLlamadaApiComponent = () => {
         })
     }
 
-    const pokemon = (offset, limit) => {
-        for(let i = offset; i <= offset + limit; i++){
+    const onClick = () => {
+        console.log('Click en el Onclick')
+    }
+
+    const pokemon = (count) => {
+        for(let i = 1; i <= count; i++){
             fetchPokemons(i)
         }
     }
@@ -91,8 +89,8 @@ export const MultipleLlamadaApiComponent = () => {
         contenedorCards.appendChild(imagenContainer);
 
     }
-    pokemon(offset, limit);
 
+    pokemon(100);
     
     return(
         <div>
@@ -105,15 +103,13 @@ export const MultipleLlamadaApiComponent = () => {
            <nav className="pagination">
                 <ul className="pagination">
                     <li className="page-item" id="previous">
-                        <Link className="page-link" >Anterior</Link>
+                        <Link className="page-link">Anterior</Link>
                     </li>
-                    <li className="page-item" id="next" onClick={() => setCondicion(!condicion) }>
-                        <Link className="page-link">Siguiente</Link>
+                    <li className="page-item" id="next">
+                        <Link className="page-link" onClick={onClick}>Siguiente</Link>
                     </li>
                 </ul>
            </nav>
-
-
         </div>
     )
 }

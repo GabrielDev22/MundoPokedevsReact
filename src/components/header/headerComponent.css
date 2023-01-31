@@ -10,7 +10,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 
 .linkDePaginas{
@@ -35,4 +34,26 @@
 
 .urlPaginas:hover{
     color: #FF9263;
+}
+
+@media screen and (max-width: 600px){
+
+    .linkDePaginas{
+        padding: 7px;
+        margin-left: 40px;
+    }
+
+    .linkDePaginas:hover{
+        border-bottom: 3px solid #FF9263;
+        transform:  translate(10px, 5%);
+    }
+
+    .urlPaginas{
+        font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        text-decoration: none;
+        transition: 1s all ease-in-out;
+    }
+
 }

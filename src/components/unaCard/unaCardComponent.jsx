@@ -15,7 +15,6 @@ export const UnaLlamadaAlaApiDePokemonComponent = () => {
 
     const enviandoLosDatosAlDom = (data) => {
 
-        console.log(data)
         const contenedorCard = document.querySelector('.contenedorCard');
 
         contenedorCard.style.display = 'block';

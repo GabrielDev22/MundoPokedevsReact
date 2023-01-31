@@ -23,7 +23,7 @@
 
 .contenedorCard:hover{
     color: white;
-    background-color: #ca3443;
+    background:#4BB4D5;
 }
 
 .contenedorDeImagen{
@@ -38,14 +38,14 @@
 .imagenPokemon{
     border-radius: 50%;
     width: 350px;
-    background-color: #c54350;
+    background-color: rgb(233, 13, 13);
     border: 6px solid #EAF640;
     box-shadow: 25px 25px 50px #EAF640;
     transition:  0.8s all ease-in-out;
 }
 
 .imagenPokemon:hover{
-    background-color: #003CF5;
+    background-color: transparent;
     transform: translate(20px, 10px);
 }
 
@@ -201,7 +201,7 @@
 
 .progressBarContenedor{
     width: 400px;
-    border: 2px solid #808080;
+    border: 2px solid black;
     border-radius: 20px;
     transition: 1s all ease-in-out;
 }
@@ -245,6 +245,13 @@
 }
 
 @media screen and (max-width: 600px){
+
+    .tituloApiDePokemon{
+        font-size: 30px;
+        margin-top: 50px;
+        transition:  0.8s all ease-in-out;
+    }
+
     .contenedorCard{
         width: 90%;
         margin-top: 50px;
@@ -367,5 +374,18 @@
         border: 2px solid #808080;
         border-radius: 20px;
         transition: 1s all ease-in-out;
+    }
+
+    .botonDeReinicio{
+        font-size: 16px;
+        padding: 7px;
+        border-radius: 10px;
+    }
+    
+    .inputLlamadPokemon{
+        width: 300px;
+        text-align: center;
+        font-size: 16px;
+        color: black;
     }
 }
