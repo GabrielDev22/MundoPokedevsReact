@@ -231,3 +231,138 @@ span{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 20px;
 }
+
+@media screen and (max-width: 600px){
+    .TituloInicio{
+        font-size: 30px;
+    }
+    
+    /* Contenedor Pokemon */
+
+    .contenedorPokemon{
+        margin: 20px;
+        margin-top: 40px;
+     }
+    
+    .contenidoPokemon{
+        font-size: 20px;
+    }
+    
+    .informacionPokemon{
+        font-size: 16px;
+        margin: 30px;
+    }
+    
+    /* ContenedorIndice */
+    
+    .contenedorIndice{
+        width: 340px;
+    }
+    
+    /*  Etimologia */
+    
+    .contenedorEtimologia{
+        margin: 20px;
+    }
+    
+    .contenidoEtimologia{
+        font-size: 20px;
+    }
+    
+    .informacionEtimologia{
+        font-size: 16px;
+    }
+    
+    /*  HISTORIA */
+    
+    .contenedorHistoria{
+        margin: 20px;
+    }
+    
+    .informacionHistoria{
+        font-size: 16px;
+    }
+    
+    /* CONCEPTO */
+    
+    .contenedorConcepto{
+        margin: 20px;
+    }
+    
+    .contenidoConcepto{
+        font-size: 20px;
+    }
+    
+    .informacionConcepto{
+        font-size: 16px;
+    }
+    
+    /* Mecani del juego */
+    
+    .contenedorMecanicaDelJuego{
+        margin: 20px;
+    }
+    
+    .contendioMecanicaDelJuego{
+        font-size: 20px;
+    }
+    
+    .tituloMecaniDelJuego{
+        font-size: 20px;
+    }
+    
+    .informacionMecanicaDelJuego{
+        font-size: 16px;
+    }
+    
+    /* Medios Relacionados */
+    
+    .contenedorMediosRelacionados{
+        margin: 20px;
+    }
+    
+    .contenidoMediosRelacionados{
+        font-size: 20px;
+    }
+    
+    .tituloMediosRelacionados{
+        font-size: 20px;
+    }
+    
+    .informacionMediosRelacionados{
+        font-size: 16px;
+    }
+    
+    /* Criticas  */
+    
+    .contenedorCriticas{
+        margin: 20px;
+    }
+    
+    .contenidoCriticas{
+        font-size: 20px;
+    }
+    
+    .tituloCriticas{
+        font-size: 20px;
+    }
+    
+    .informacionCriticas{
+        font-size: 16px;
+    }
+    
+    /* Impacto en la cultura popular */
+    
+    .contenedorImpactoCultura{
+        margin: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .contenidoImpactoCultura{
+        font-size: 18px;
+    }
+    
+    .informacionCultura{
+        font-size: 16px;
+    }
+}

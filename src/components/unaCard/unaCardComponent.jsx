@@ -16,7 +16,6 @@ export const UnaLlamadaAlaApiDePokemonComponent = () => {
     const enviandoLosDatosAlDom = (data) => {
 
         const contenedorCard = document.querySelector('.contenedorCard');
-
         contenedorCard.style.display = 'block';
 
         /* Contenedor de la Card */
@@ -106,7 +105,6 @@ export const UnaLlamadaAlaApiDePokemonComponent = () => {
 
         }
     }
-
     
     return(
         <div>

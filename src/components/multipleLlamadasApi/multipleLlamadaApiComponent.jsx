@@ -2,6 +2,27 @@ import "./multipleLlamadaApiComponent.css"
 import {Link} from "react-router-dom";
 export const MultipleLlamadaApiComponent = () => {
 
+    const contenedorCards = document.querySelector('.contenedorLibros');
+    let offset = 1;
+    let limit = 9;
+
+    const onClickAnterior = () => {
+        console.log('Click en el anterior')
+        if(offset !== 1){
+            offset -= 9;
+            removeChildNodes(contenedorCards)
+            fetchPokemons(offset, limit);
+        }
+    }
+
+    const onClickContinuacion = () => {
+        console.log('Click en el Onclick')
+        offset += 9;
+       /*  removeChildNodes(contenedorCards) */
+        fetchPokemons(offset, limit)
+    }
+
+
     const fetchPokemons = (id) =>{
         fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
         .then((res) => res.json())
@@ -10,12 +31,9 @@ export const MultipleLlamadaApiComponent = () => {
         })
     }
 
-    const onClick = () => {
-        console.log('Click en el Onclick')
-    }
 
-    const pokemon = (count) => {
-        for(let i = 1; i <= count; i++){
+    const pokemon = (offset, limit) => {
+        for(let i = offset; i <= offset + limit; i++){
             fetchPokemons(i)
         }
     }
@@ -90,7 +108,13 @@ export const MultipleLlamadaApiComponent = () => {
 
     }
 
-    pokemon(100);
+    const removeChildNodes = (parent) => {
+        while(parent.firstChild){
+            parent.removeChild(parent.firstChild)
+        }
+    }
+
+    pokemon(offset, limit);
     
     return(
         <div>
@@ -103,10 +127,10 @@ export const MultipleLlamadaApiComponent = () => {
            <nav className="pagination">
                 <ul className="pagination">
                     <li className="page-item" id="previous">
-                        <Link className="page-link">Anterior</Link>
+                        <Link className="page-link" onClick={onClickAnterior}>Anterior</Link>
                     </li>
                     <li className="page-item" id="next">
-                        <Link className="page-link" onClick={onClick}>Siguiente</Link>
+                        <Link className="page-link" onClick={onClickContinuacion}>Siguiente</Link>
                     </li>
                 </ul>
            </nav>
