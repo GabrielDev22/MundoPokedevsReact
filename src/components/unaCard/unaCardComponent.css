@@ -6,11 +6,13 @@
     text-align: center;
     margin-top: 50px;
     transition:  0.8s all ease-in-out;
+    color: #d2404f;
+    border-bottom: 3px solid #EBB209
 }
 
 .tituloApiDePokemon:hover{
-    color: #d2404f;
-    border-bottom: 3px solid #EBB209
+    color: #003CF5;
+    border-bottom: 3px solid #4BB4D5
 }
 
 .contenedorCard{
@@ -24,6 +26,7 @@
 .contenedorCard:hover{
     color: white;
     background:#4BB4D5;
+    border-radius: 50px;
 }
 
 .contenedorDeImagen{
@@ -33,6 +36,7 @@
     width: 100%;
     border: 2px solid white;
     box-shadow: 25px 25px 50px black;
+    border-radius: 50px;
 }
 
 .imagenPokemon{
@@ -228,20 +232,21 @@
 .inputLlamadPokemon{
     display: flex;
     margin: 0 auto;
-    width: 400px;
+    width: 600px;
     margin-top: 50px;
     padding: 10px;
     border-radius: 20px;
-    border-bottom: 3px solid black;
-    box-shadow: 10px 10px 20px #EBB209;
+    border: 2px solid white;
+    box-shadow: 1px 1px 3px 3px #891E28;
     text-align: center;
     font-size: 18px;
     font-family: IBM Plex Mono', monospace';
     color: black;
+    transition:  0.2s all ease-in-out;
 }
 
 .inputLlamadPokemon:hover{
-    border: 3px solid #891E28;
+    box-shadow: 1px 1px 3px 3px #003CF5;
 }
 
 @media screen and (max-width: 600px){

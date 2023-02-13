@@ -1,26 +1,5 @@
 import "./multipleLlamadaApiComponent.css"
-import {Link} from "react-router-dom";
-export const MultipleLlamadaApiComponent = () => {
-
-    const contenedorCards = document.querySelector('.contenedorLibros');
-    let offset = 1;
-    let limit = 9;
-
-    const onClickAnterior = () => {
-        console.log('Click en el anterior')
-        if(offset !== 1){
-            offset -= 9;
-            removeChildNodes(contenedorCards)
-            fetchPokemons(offset, limit);
-        }
-    }
-
-    const onClickContinuacion = () => {
-        console.log('Click en el Onclick')
-        offset += 9;
-       /*  removeChildNodes(contenedorCards) */
-        fetchPokemons(offset, limit)
-    }
+export const MultipleLlamadaApiComponent = () => {   
 
 
     const fetchPokemons = (id) =>{
@@ -31,13 +10,11 @@ export const MultipleLlamadaApiComponent = () => {
         })
     }
 
-
-    const pokemon = (offset, limit) => {
-        for(let i = offset; i <= offset + limit; i++){
+    const pokemon = (number) => {
+        for(let i = 1; i <= number; i++){
             fetchPokemons(i)
         }
     }
-
 
     const createPokemons = (pokemons) => {
 
@@ -57,6 +34,7 @@ export const MultipleLlamadaApiComponent = () => {
               specialAttackPokemon = document.createElement('p'),
               specialDefensePokemon = document.createElement('p'),
               speedPokemon = document.createElement('p');
+            /*   favorito = document.createElement('button'); */
 
          //Dandoles clases
 
@@ -73,6 +51,7 @@ export const MultipleLlamadaApiComponent = () => {
         specialAttackPokemon.classList.add('specialAttackPokemons')
         specialDefensePokemon.classList.add('specialDefensePokemons')
         speedPokemon.classList.add('speedPokemons')
+      /*   favorito.classList.add('favoritoPokemon') */
 
         imagenPokemon.src = pokemons.sprites.other.home.front_default;
         namePokemon.textContent = pokemons.name[0].toUpperCase() + pokemons.name.substring(1);
@@ -85,6 +64,7 @@ export const MultipleLlamadaApiComponent = () => {
         specialAttackPokemon.textContent = `Especial-Ataque: ${pokemons.stats[3].base_stat}`
         specialDefensePokemon.textContent = `Especial-Defensa: ${pokemons.stats[4].base_stat}`
         speedPokemon.textContent = `Velocidad: ${pokemons.stats[5].base_stat}` 
+        /* favorito.textContent = `Agregar a Favorito ❤️`; */
 
         // Anidando los elementos al dom
 
@@ -98,6 +78,7 @@ export const MultipleLlamadaApiComponent = () => {
         contenidoStat.appendChild(specialAttackPokemon)
         contenidoStat.appendChild(specialDefensePokemon)
         contenidoStat.appendChild(speedPokemon)
+        /* contenidoStat.appendChild(favorito) */
 
         // Anidando los elementos segunda parte
         imagenContainer.appendChild(imagenPokemon)
@@ -105,35 +86,15 @@ export const MultipleLlamadaApiComponent = () => {
 
         //Anidando los elementos tercera parte
         contenedorCards.appendChild(imagenContainer);
-
     }
 
-    const removeChildNodes = (parent) => {
-        while(parent.firstChild){
-            parent.removeChild(parent.firstChild)
-        }
-    }
-
-    pokemon(offset, limit);
+    pokemon(200);
     
     return(
         <div>
             <h1 className="tituloLibroPokemon">Libros de Pokemons</h1>
 
-            <div className="contenedorLibros">
-                
-           </div>
-
-           <nav className="pagination">
-                <ul className="pagination">
-                    <li className="page-item" id="previous">
-                        <Link className="page-link" onClick={onClickAnterior}>Anterior</Link>
-                    </li>
-                    <li className="page-item" id="next">
-                        <Link className="page-link" onClick={onClickContinuacion}>Siguiente</Link>
-                    </li>
-                </ul>
-           </nav>
+            <div className="contenedorLibros"></div>
         </div>
     )
 }

@@ -7,11 +7,13 @@
     text-align: center;
     margin-top: 50px;
     transition:  0.8s all ease-in-out;
+    color: #891E28;
+    border-bottom: 3px solid #EBB209
 }
 
 .tituloLibroPokemon:hover{
-    color: #891E28;
-    border-bottom: 3px solid #EBB209
+    color: #003CF5;
+    border-bottom: 3px solid #4BB4D5
 }
 
 .contenedorLibros{
@@ -24,11 +26,13 @@
 
 .imagenContainer{
     display: flex;
-    width: 35%;
+    width: 40%;
+    height: 32rem;
     margin-bottom: 100px;
-    margin-left: 150px;
+    margin-left: 100px;
     border: 2px solid white;
     box-shadow: 25px 25px 50px black;
+    border-radius: 50px;
 }
 
 .imagenContainer:hover{
@@ -37,13 +41,14 @@
 }
 
 .imagenesPokemones{
-    width: 200px;
+    width: 250px;
     border-radius: 50%;
     background-color: #028ED9;
     border: 4px solid #EAF640;
     box-shadow: 25px 25px 50px #EAF640;
     margin-bottom: 15rem;
     transition:  0.8s all ease-in-out;
+    transform: translate(10px, 100px);
 }
 
 .imagenesPokemones:hover{
@@ -188,6 +193,24 @@
     text-shadow: 1px 2px 3px black;
     border-bottom: 3px solid #EBB209
 }
+
+/* .favoritoPokemon{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 2px 2px black;
+    border-radius: 20px;
+    transition: 0.8s all ease-in-out;
+}
+
+.favoritoPokemon:hover{
+    background-color: #891E28;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+    border: 3px solid #4BB4D5;
+} */
 
 .pagination{
     display: flex;

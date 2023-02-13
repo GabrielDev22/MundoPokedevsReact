@@ -16,6 +16,10 @@ export const HeaderComponent = () => {
                     <li className="linkDePaginas">
                         <Link to="/MultipleCard" className="urlPaginas">Libro de Cartas</Link>
                     </li>
+
+                    <li className="linkDePaginas">
+                        <Link to="/Favoritos" className="urlPaginas">Favoritos</Link>
+                    </li>
                 </ul>
             </nav>
         </div>
