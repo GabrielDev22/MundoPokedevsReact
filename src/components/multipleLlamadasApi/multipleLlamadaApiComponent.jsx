@@ -33,8 +33,8 @@ export const MultipleLlamadaApiComponent = () => {
               defensaPokemon = document.createElement('p'),
               specialAttackPokemon = document.createElement('p'),
               specialDefensePokemon = document.createElement('p'),
-              speedPokemon = document.createElement('p');
-            /*   favorito = document.createElement('button'); */
+              speedPokemon = document.createElement('p'),
+              favorito = document.createElement('button');
 
          //Dandoles clases
 
@@ -51,7 +51,7 @@ export const MultipleLlamadaApiComponent = () => {
         specialAttackPokemon.classList.add('specialAttackPokemons')
         specialDefensePokemon.classList.add('specialDefensePokemons')
         speedPokemon.classList.add('speedPokemons')
-      /*   favorito.classList.add('favoritoPokemon') */
+        favorito.classList.add('favoritoPokemon')
 
         imagenPokemon.src = pokemons.sprites.other.home.front_default;
         namePokemon.textContent = pokemons.name[0].toUpperCase() + pokemons.name.substring(1);
@@ -64,7 +64,7 @@ export const MultipleLlamadaApiComponent = () => {
         specialAttackPokemon.textContent = `Especial-Ataque: ${pokemons.stats[3].base_stat}`
         specialDefensePokemon.textContent = `Especial-Defensa: ${pokemons.stats[4].base_stat}`
         speedPokemon.textContent = `Velocidad: ${pokemons.stats[5].base_stat}` 
-        /* favorito.textContent = `Agregar a Favorito ❤️`; */
+        favorito.textContent = `Agregar a Favorito ❤️`;
 
         // Anidando los elementos al dom
 
@@ -78,7 +78,7 @@ export const MultipleLlamadaApiComponent = () => {
         contenidoStat.appendChild(specialAttackPokemon)
         contenidoStat.appendChild(specialDefensePokemon)
         contenidoStat.appendChild(speedPokemon)
-        /* contenidoStat.appendChild(favorito) */
+        contenidoStat.appendChild(favorito)
 
         // Anidando los elementos segunda parte
         imagenContainer.appendChild(imagenPokemon)

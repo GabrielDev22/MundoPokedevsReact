@@ -38,6 +38,7 @@
 .imagenContainer:hover{
     color: white;
     background-color: #028ED9;
+    transform: scale(1.1);
 }
 
 .imagenesPokemones{
@@ -72,8 +73,8 @@
 }
 
 .namePokemons:hover{
-    color: #6a8df6;
-    text-shadow: 1px 2px 3px black;
+    color: #891E28;
+    text-shadow: 1px 2px 3px white;
     border-bottom: 3px solid #EBB209
 }
 
@@ -85,8 +86,8 @@
 }
 
 .numberPokemons:hover{
-    color: #6a8df6;
-    text-shadow: 1px 2px 3px black;
+    color: #891E28;
+    text-shadow: 1px 2px 3px white;
     border-bottom: 3px solid #EBB209
 }
 
@@ -98,8 +99,8 @@
 }
 
 .baseDeExperienciaPokemons:hover{
-    color: #6a8df6;
-    text-shadow: 1px 2px 3px black;
+    color: #891E28;
+    text-shadow: 1px 2px 3px white;
     border-bottom: 3px solid #EBB209
 }
 
@@ -111,8 +112,8 @@
 }
 
 .pesoPokemons:hover{
-    color: #6a8df6;
-    text-shadow: 1px 2px 3px black;
+    color: #891E28;
+    text-shadow: 1px 2px 3px white;
     border-bottom: 3px solid #EBB209
 }
 
@@ -124,8 +125,8 @@
 }
 
 .hpPokemons:hover{
-    color: #6a8df6;
-    text-shadow: 1px 2px 3px black;
+    color: #891E28;
+    text-shadow: 1px 2px 3px white;
     border-bottom: 3px solid #EBB209
 }
 
@@ -137,8 +138,8 @@
 }
 
 .ataquePokemons:hover{
-    color: #6a8df6;
-    text-shadow: 1px 2px 3px black;
+    color: #891E28;
+    text-shadow: 1px 2px 3px white;
     border-bottom: 3px solid #EBB209
 }
 
@@ -150,8 +151,8 @@
 }
 
 .defensaPokemons:hover{
-    color: #6a8df6;
-    text-shadow: 1px 2px 3px black;
+    color: #891E28;
+    text-shadow: 1px 2px 3px white;
     border-bottom: 3px solid #EBB209
 }
 
@@ -163,8 +164,8 @@
 }
 
 .specialAttackPokemons:hover{
-    color: #6a8df6;
-    text-shadow: 1px 2px 3px black;
+    color: #891E28;
+    text-shadow: 1px 2px 3px white;
     border-bottom: 3px solid #EBB209
 }
 
@@ -176,8 +177,8 @@
 }
 
 .specialDefensePokemons:hover{
-    color: #6a8df6;
-    text-shadow: 1px 2px 3px black;
+    color: #891E28;
+    text-shadow: 1px 2px 3px white;
     border-bottom: 3px solid #EBB209
 }
 
@@ -189,28 +190,10 @@
 }
 
 .speedPokemons:hover{
-    color: #6a8df6;
-    text-shadow: 1px 2px 3px black;
+    color: #891E28;
+    text-shadow: 1px 2px 3px white;
     border-bottom: 3px solid #EBB209
 }
-
-/* .favoritoPokemon{
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom: 10px;
-    padding: 5px;
-    border: 1px solid white;
-    box-shadow: 1px 1px 2px 2px black;
-    border-radius: 20px;
-    transition: 0.8s all ease-in-out;
-}
-
-.favoritoPokemon:hover{
-    background-color: #891E28;
-    color: white;
-    text-shadow: 1px 2px 3px black;
-    border: 3px solid #4BB4D5;
-} */
 
 .pagination{
     display: flex;

@@ -5,20 +5,13 @@ export const HeaderComponent = () => {
         <div>
             <nav className="navBar">
                 <ul className="listadoDePaginas">
-                    <li className="linkDePaginas">
-                        <Link to="/" className="urlPaginas">Inicio</Link>
-                    </li>
 
                     <li className="linkDePaginas">
-                        <Link to="/Card" className="urlPaginas">Pokemon</Link>
+                        <Link to="/" className="urlPaginas">Pokemon</Link>
                     </li>
 
                     <li className="linkDePaginas">
                         <Link to="/MultipleCard" className="urlPaginas">Libro de Cartas</Link>
-                    </li>
-
-                    <li className="linkDePaginas">
-                        <Link to="/Favoritos" className="urlPaginas">Favoritos</Link>
                     </li>
                 </ul>
             </nav>
